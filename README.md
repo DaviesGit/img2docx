@@ -76,7 +76,11 @@
 ```sh
 sudo apt-get install python3
 ```
+* [Python-Docx 0.8 Release | python-docx.readthedocs.io](https://python-docx.readthedocs.io/en/latest/)
 
+```sh
+pip3 install --user python-docx
+```
 
 
 ### Installation

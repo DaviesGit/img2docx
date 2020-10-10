@@ -7,4 +7,8 @@ else
 	shell_dir=$(dirname "$0")
 fi
 
-/a/bin/python3 "$shell_dir/img2docx.py" "$@"
+if !(printf '\033[8m' && (pip3 list | grep docx)) then
+	pip3 install --user python-docx
+fi
+printf '\033[m'
+/bin/python3 "$shell_dir/img2docx.py" "$@"
